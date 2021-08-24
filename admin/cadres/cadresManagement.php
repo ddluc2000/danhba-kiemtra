@@ -112,8 +112,27 @@
         ?>                       
         <br />
         <a href="addCadres.php" class="btn-primary">Add Cadres</a>
-
-        <br /><br /><br />
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Filter Cadres
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <form method="GET" action="">
+                    <?php
+                        $sql2 = "SELECT * FROM tbdonvi";
+                        $result2 = mysqli_query($conn,$sql2);
+                        if(mysqli_num_rows($result2)){
+                            while($row2 = mysqli_fetch_assoc($result2)){
+                    ?>                        
+                                <li><a class = "dropdown-item" href="filterCadres.php?id=<?php echo $row2['id']?>"><?php echo $row2['donviName'];?></a></li>                        
+                    <?php
+                            }
+                        }
+                    ?>
+                </form>
+            </ul>
+        </div>
+        <br /><br /><br><br>
     <div>
         <?php 
             $sql = "SELECT * FROM tbcanbo";
