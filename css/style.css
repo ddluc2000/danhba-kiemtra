@@ -1,0 +1,116 @@
+/* style for all */
+.text-center{
+    text-align: center;
+}
+
+.head{
+    background-color: whitesmoke;
+    margin: 0 0;
+    padding: 0 0;
+    height: 25vh;
+    width: 100%;
+}
+.header-top{
+    height: 60%;
+    background-color: aquamarine;
+}
+.header-top-left{
+    width: 30%;
+    padding-top: 10px;
+    float: left;
+    font-size: 3rem;
+    padding-left:3rem ;
+}
+.header-top-right{
+    width: 70%;
+    font-size: 1.5rem;
+    padding-right: 3rem;
+}
+.search {
+    position: relative;
+}
+.header-bottom{
+    height: 40%;
+    background-color: aquamarine;
+}
+.search input {
+    width: 50%;
+    height: 6vh;
+    margin-left: 25%;
+    text-indent: 25px;
+}
+
+.search input:focus {
+    box-shadow: none;
+    border: 2px solid blue
+}
+
+.search .fa-search {
+    position: absolute;
+    top: 20px;
+    left: 16px
+}
+
+.search button {
+    position: absolute;
+    top:1px;
+    right: 26%;
+    height: 5vh;
+    width: 100px;
+    background: blue
+}
+.row2{
+    padding-left: 20px;
+    color: white;
+    background-color: chocolate;
+}
+.row1{
+    padding-left: 5%;
+    border: 0.5px solid white;
+}
+.link{
+    color: black;
+}
+
+/* style for main */
+.img-responsive{
+    height: 40rem;
+    padding: 2% 15%;
+}
+.feature{
+    max-height: max-content;
+}
+
+/* style for login */
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.lgin{
+    padding-top: 5rem;
+}
+
+/* Style for search */
